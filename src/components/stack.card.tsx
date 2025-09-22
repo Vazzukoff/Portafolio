@@ -37,7 +37,6 @@ export default function StackCard({ category }: StackCardProps) {
               <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                 <IconComponent
                   color={tech.color}
-                  size={20}
                 />
               </div>
               <span className="text-sm font-medium tracking-wide">
