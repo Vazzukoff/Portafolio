@@ -1,4 +1,3 @@
-import './App.css'
 import  Hero  from './sections/hero/index'
 import About from './sections/about/index'
 import Projects from './sections/projects'
