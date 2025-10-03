@@ -3,6 +3,7 @@ export interface Project {
   title: string;
   description: string;
   githubUrl: string;
+  deployUrl?: string;
 }
 
 export interface ProjectProps {

@@ -11,20 +11,21 @@ export default function StackCard({ category }: StackCardProps) {
   
   return (
     <motion.div
-      className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/10 hover:border-white/20 transition-all duration-500 hover:bg-black/60"
+      className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/30 hover:border-emerald-400/60 transition-all duration-500 hover:bg-black/60 group"
       variants={cardVariants}
       initial="hidden"
       animate="visible"
       whileTap={{ scale: 0.98 }}
     >
-      <h3 className="text-2xl font-light text-white mb-6 tracking-tight border-b border-white/10 pb-3">
+      <h3 className="text-2xl font-light text-white mb-5 tracking-tight border-b border-emerald-400/30 pb-3 group-hover:text-emerald-400 transition-colors duration-300">
         {title}
       </h3>
+      
       <ul
         className={
           gridCols
-            ? `grid ${gridCols} gap-4 font-light`
-            : "space-y-4 font-light"
+            ? `grid ${gridCols} gap-x-6 gap-y-4 font-light`
+            : "grid grid-cols-2 gap-x-6 gap-y-4 font-light"
         }
       >
         {technologies.map((tech) => {
@@ -32,14 +33,14 @@ export default function StackCard({ category }: StackCardProps) {
           return (
             <li
               key={tech.name}
-              className="flex items-center gap-3 text-white/90 hover:text-white transition-colors duration-300 group"
+              className="flex items-center gap-3 text-white/90 hover:text-emerald-400 transition-colors duration-300 group/item"
             >
-              <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+              <div className="flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300">
                 <IconComponent
                   color={tech.color}
                 />
               </div>
-              <span className="text-sm font-medium tracking-wide">
+              <span className="text-base font-medium tracking-wide">
                 {tech.name}
               </span>
             </li>

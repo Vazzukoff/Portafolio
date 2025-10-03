@@ -6,25 +6,28 @@ import StackCard from '@/components/stack.card';
 
 export default function StackSection() {
   return (
-    <motion.div 
+    <motion.div
       className="text-center"
       variants={itemVariants}
     >
-      <motion.h2 
-        className="font-title text-4xl mb-4"
+      <motion.h2
+        className="font-light text-4xl md:text-5xl text-white tracking-tight mb-2 group inline-block"
         variants={itemVariants}
       >
-        Stack
+        Stack{' '}
+        <span className="text-emerald-400 transition-colors duration-300 hover:text-emerald-300">
+          tecnológico
+        </span>
       </motion.h2>
       
       <SectionDivider />
       
-      <motion.div 
-        className="grid grid-cols-1 md:grid-cols-3 gap-10"
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8"
         variants={stackCardsVariants}
       >
         {stackData.map((category) => (
-          <StackCard 
+          <StackCard
             key={category.title}
             category={category}
           />

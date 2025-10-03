@@ -8,7 +8,11 @@ import {
   SiExpress,
   SiTailwindcss, 
   SiPostgresql,
-  SiPrisma 
+  SiPrisma,
+  SiGit,
+  SiGithub,
+  SiPostman,
+  SiVercel
 } from 'react-icons/si';
 
 export interface Technology {
@@ -24,6 +28,7 @@ export interface StackCategory {
 }
 
 export const stackData: StackCategory[] = [
+  
   {
     title: "Frontend",
     technologies: [
@@ -33,21 +38,32 @@ export const stackData: StackCategory[] = [
       { name: "HTML", icon: SiHtml5, color: "#E34F26" },
       { name: "CSS", icon: SiCss3, color: "#1572B6" },
       { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4" }
-    ],
-    gridCols: "grid-cols-3"
+    ]
   },
   {
     title: "Backend",
     technologies: [
+      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
       { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
-      { name: "Express", icon: SiExpress, color: "white" }
+      { name: "Express", icon: SiExpress, color: "white" },
+      { name: "Prisma", icon: SiPrisma, color: "#2D3748" }
     ]
   },
   {
     title: "Databases",
     technologies: [
-      { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
-      { name: "Prisma", icon: SiPrisma, color: "#2D3748" }
+      { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" }
     ]
+  },
+  {
+    title: "Tools",
+    technologies: [
+      { name: "Git", icon: SiGit, color: "#F05032" },
+      { name: "GitHub", icon: SiGithub, color: "white" },
+      { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+      { name: "Vercel", icon: SiVercel, color: "white" }
+    ],
+    gridCols: "grid-cols-2"
   }
-];
+]
