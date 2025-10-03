@@ -7,17 +7,17 @@ import { projectsData } from '@/data/project.data';
 
 export default function Projects({ projectRef }: ProjectProps) {
   const projects = projectsData;
-
+  
   return (
     <motion.section
       ref={projectRef}
-      className="min-h-screen bg-black text-white px-6 md:px-16 py-20"
+      className="min-h-screen bg-black text-white px-4 md:px-6 lg:px-16 py-16 md:py-20"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
     >
-      <div className="max-w-6xl mx-auto h-full flex flex-col justify-center space-y-16">
+      <div className="max-w-6xl mx-auto h-full flex flex-col justify-center space-y-12 md:space-y-16">
         <ProjectsHeader />
         <ProjectsGrid projects={projects} />
       </div>
