@@ -12,7 +12,8 @@ import {
   SiGit,
   SiGithub,
   SiPostman,
-  SiVercel
+  SiVercel,
+  SiDocker
 } from 'react-icons/si';
 
 export interface Technology {
@@ -41,28 +42,25 @@ export const stackData: StackCategory[] = [
     ]
   },
   {
-    title: "Backend",
+    title: "Backend y bases de datos",
     technologies: [
       { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
       { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
       { name: "Express", icon: SiExpress, color: "white" },
-      { name: "Prisma", icon: SiPrisma, color: "#2D3748" }
-    ]
-  },
-  {
-    title: "Databases",
-    technologies: [
+      { name: "Prisma", icon: SiPrisma, color: "#2D3748" },
       { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" }
     ]
   },
+
   {
     title: "Tools",
     technologies: [
       { name: "Git", icon: SiGit, color: "#F05032" },
       { name: "GitHub", icon: SiGithub, color: "white" },
       { name: "Postman", icon: SiPostman, color: "#FF6C37" },
-      { name: "Vercel", icon: SiVercel, color: "white" }
+      { name: "Vercel", icon: SiVercel, color: "white" },
+      { name: "Docker", icon: SiDocker, color: "#06B6D4" }
     ],
     gridCols: "grid-cols-2"
   }

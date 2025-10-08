@@ -5,7 +5,7 @@ interface SectionDividerProps {
   maxWidth?: string;
 }
 
-export default function SectionDivider({ maxWidth = "max-w-[300px]" }: SectionDividerProps) {
+export default function SectionDivider({ maxWidth = "max-w-[600px]" }: SectionDividerProps) {
   return (
     <motion.div
       className={`relative w-full ${maxWidth} h-[2px] mx-auto my-6`}

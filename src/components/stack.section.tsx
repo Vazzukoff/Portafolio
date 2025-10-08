@@ -23,7 +23,7 @@ export default function StackSection() {
       <SectionDivider />
       
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8"
+        className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-[1400px] mx-auto"
         variants={stackCardsVariants}
       >
         {stackData.map((category) => (

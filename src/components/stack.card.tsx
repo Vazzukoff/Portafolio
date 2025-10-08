@@ -11,21 +11,21 @@ export default function StackCard({ category }: StackCardProps) {
   
   return (
     <motion.div
-      className="bg-black/40 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-white/30 hover:border-emerald-400/60 transition-all duration-500 hover:bg-black/60 group"
+      className="bg-black/40 backdrop-blur-sm rounded-2xl p-10 shadow-2xl border border-white/30 hover:border-emerald-400/60 transition-all duration-500 hover:bg-black/60 group min-w-[280px]"
       variants={cardVariants}
       initial="hidden"
       animate="visible"
       whileTap={{ scale: 0.98 }}
     >
-      <h3 className="text-2xl font-light text-white mb-5 tracking-tight border-b border-emerald-400/30 pb-3 group-hover:text-emerald-400 transition-colors duration-300">
+      <h3 className="text-2xl font-light text-white mb-6 tracking-tight border-b border-emerald-400/30 pb-4 group-hover:text-emerald-400 transition-colors duration-300">
         {title}
       </h3>
       
       <ul
         className={
           gridCols
-            ? `grid ${gridCols} gap-x-6 gap-y-4 font-light`
-            : "grid grid-cols-2 gap-x-6 gap-y-4 font-light"
+            ? `grid ${gridCols} gap-x-8 gap-y-5 font-light`
+            : "grid grid-cols-2 gap-x-8 gap-y-5 font-light"
         }
       >
         {technologies.map((tech) => {
