@@ -32,7 +32,7 @@ const techIconMap: Record<string, { icon: React.ComponentType<{ className?: stri
   'JavaScript': { icon: SiJavascript, color: '#F7DF1E' },
   'TypeScript': { icon: SiTypescript, color: '#3178C6' },
   'Prisma': { icon: SiPrisma, color: '#2D3748' },
-  'JWT': { icon: SiJsonwebtokens, color: '#000000' },
+  'JWT': { icon: SiJsonwebtokens, color: 'white' },
   'Multer': { icon: SiNodedotjs, color: '#339933' },
   'node-cron': { icon: SiNodedotjs, color: '#339933' },
   'Nodemailer': { icon: SiNodedotjs, color: '#339933' },
