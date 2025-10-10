@@ -11,7 +11,7 @@ export default function StackSection() {
       variants={itemVariants}
     >
       <motion.h2
-        className="font-light text-4xl md:text-5xl text-white tracking-tight mb-2 group inline-block"
+        className="font-title text-4xl md:text-6xl text-white tracking-tight mb-2 group inline-block"
         variants={itemVariants}
       >
         Stack{' '}

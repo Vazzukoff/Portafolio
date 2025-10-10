@@ -33,18 +33,18 @@ export default function Hero({ aboutRef, projectRef }: HeroProps) {
 
         <div className="absolute top-4 md:top-8 z-20 left-1/2 -translate-x-1/2 w-full px-4">
           <nav className="backdrop-blur-xl bg-black/30 border border-white/30 hover:border-emerald-400/60 px-4 md:px-8 py-3 md:py-4 rounded-full shadow-2xl transition-all duration-500 hover:bg-black/40 max-w-fit mx-auto">
-            <ul className="flex flex-row gap-4 md:gap-8">
+            <ul className="flex flex-row font-title gap-4 md:gap-8">
               <li
                 onClick={() => scrollToSection(aboutRef)}
                 className="cursor-pointer px-3 md:px-5 py-2 rounded-full text-xs md:text-sm font-medium text-white/80 hover:text-emerald-400 hover:bg-emerald-400/10 transition-all duration-300 tracking-wide"
               >
-                About me
+                Sobre mí
               </li>
               <li
                 onClick={() => scrollToSection(projectRef)}
                 className="cursor-pointer px-3 md:px-5 py-2 rounded-full text-xs md:text-sm font-medium text-white/80 hover:text-emerald-400 hover:bg-emerald-400/10 transition-all duration-300 tracking-wide"
               >
-                My projects
+                Mis proyectos
               </li>
             </ul>
           </nav>

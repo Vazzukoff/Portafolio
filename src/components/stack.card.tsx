@@ -17,10 +17,9 @@ export default function StackCard({ category }: StackCardProps) {
       animate="visible"
       whileTap={{ scale: 0.98 }}
     >
-      <h3 className="text-2xl font-light text-white mb-6 tracking-tight border-b border-emerald-400/30 pb-4 group-hover:text-emerald-400 transition-colors duration-300">
+      <h3 className="text-2xl font-subtitle text-white mb-6 tracking-tight border-b border-emerald-400/30 pb-4 group-hover:text-emerald-400 transition-colors duration-300">
         {title}
       </h3>
-      
       <ul
         className={
           gridCols
@@ -33,14 +32,14 @@ export default function StackCard({ category }: StackCardProps) {
           return (
             <li
               key={tech.name}
-              className="flex items-center gap-3 text-white/90 hover:text-emerald-400 transition-colors duration-300 group/item"
+              className="flex items-center gap-3 text-white/90 transition-colors duration-300 group/item cursor-default hover:text-emerald-400"
             >
               <div className="flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300">
                 <IconComponent
                   color={tech.color}
                 />
               </div>
-              <span className="text-base font-medium tracking-wide">
+              <span className="text-base font-body tracking-wide">
                 {tech.name}
               </span>
             </li>

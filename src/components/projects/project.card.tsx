@@ -20,7 +20,6 @@ interface ProjectCardProps {
   project: Project;
 }
 
-// Mapeo de nombres de tecnologías a sus iconos y colores
 const techIconMap: Record<string, { icon: React.ComponentType<{ className?: string; color?: string }>, color: string }> = {
   'React': { icon: SiReact, color: '#61DAFB' },
   'Node.js': { icon: SiNodedotjs, color: '#339933' },
@@ -49,17 +48,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="group bg-black/40 backdrop-blur-sm border border-white/30 hover:border-emerald-400/60 rounded-2xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:bg-black/60 h-[550px] flex flex-col">
       <div className="flex flex-col flex-1">
-        <h3 className="text-3xl font-light text-white tracking-tight group-hover:text-emerald-400 transition-colors duration-300 mb-6">
+        <h3 className="text-3xl font-subtitle text-white tracking-tight group-hover:text-emerald-400 transition-colors duration-300 mb-6">
           {project.title}
         </h3>
         
         <div className="h-px bg-gradient-to-r from-emerald-400/40 via-white/20 to-transparent mb-6"></div>
         
-        <p className="text-white/80 font-light leading-relaxed text-base group-hover:text-white/90 transition-colors duration-300 mb-6 flex-1">
+        <p className="text-white/80 font-body leading-relaxed text-base group-hover:text-white/90 transition-colors duration-300 mb-6 flex-1">
           {project.description}
         </p>
 
-        {/* Tecnologías usadas */}
         <div className="flex flex-wrap gap-3 mb-6">
           {project.technologies.map((tech) => {
             const techInfo = techIconMap[tech];
