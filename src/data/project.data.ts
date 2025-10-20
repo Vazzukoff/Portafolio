@@ -19,7 +19,7 @@ export const projectsData: Project[] = [
       'Zod'
     ],
     githubUrl: 'https://github.com/Vazzukoff/Intranet.git',
-    deployUrl: 'https://intranet-vazzukoff.vercel.app/'
+    deployUrl: 'https://intranet-six-steel.vercel.app/'
   },
   {
     id: 'educational-center',
@@ -47,22 +47,18 @@ export const projectsData: Project[] = [
     githubUrl: 'https://github.com/Vazzukoff/Portafolio.git'
   },
   {
-    id: 'e-commerce',
-    title: 'Fullstock E-commerce',
-    description: 'Proyecto grupal que simula una tienda online completa con catálogo, carrito de compras, autenticación de usuarios y pasarela de pagos. Participé en la migración de estilos a TailwindCSS, la actualización a React Router v7, y la implementación de variantes de productos, lo que requirió modificar la base de datos y adaptar el frontend. También colaboré en la refactorización de componentes para mejorar mantenibilidad y rendimiento.',
+    id: 'mentor-ai',
+    title: 'Mentor AI',
+    description: 'Mentor AI es un chatbot educativo desarrollado para asistir en el estudio. Implementé la integración con la API de Gemini, diseñé la interfaz en React con TailwindCSS, y configuré la arquitectura del proyecto utilizando TypeScript y Vite. Además, optimicé el rendimiento y la mantenibilidad del código mediante la refactorización de componentes y la gestión eficiente de dependencias.',
     technologies: [
       'React',
       'TypeScript',
       'TailwindCSS',
-      'React Router v7',
-      'Prisma',
-      'PostgreSQL',
-      'Node.js',
-      'JWT',
-      'React Hook Form',
-      'Zod'
+      'Vite',
+      'React Icons',
+      '@google/genai'
     ],
-    githubUrl: 'https://github.com/Vazzukoff/Ecommerce.git',
-    deployUrl: 'https://ecommerce-vazzukoff.vercel.app/'
+    githubUrl: 'https://github.com/Vazzukoff/MentorAI.git',
+    deployUrl: 'https://mentor-ai-phi.vercel.app'
   }
 ];

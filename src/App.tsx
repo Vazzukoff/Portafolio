@@ -2,6 +2,7 @@ import  Hero  from './sections/hero/index'
 import About from './sections/about/index'
 import Projects from './sections/projects'
 import Footer from './sections/footer'
+import Certifications from './sections/certifications'
 import { useRef } from 'react';
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       <Hero aboutRef={aboutRef} projectRef={projectRef} />
       <About aboutRef={aboutRef} />
       <Projects projectRef={projectRef} />
+      <Certifications />
       <Footer />
     </div>
   )

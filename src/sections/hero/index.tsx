@@ -73,7 +73,7 @@ export default function Hero({ aboutRef, projectRef }: HeroProps) {
                   rel="noopener noreferrer"
                   className="text-neutral-300 hover:text-blue-400 transition-all transform hover:scale-110 duration-200 drop-shadow-md"
                 >
-                  <CiLinkedin className="text-2xl md:text-3xl" />
+                  <CiLinkedin className="text-2xl md:text-4xl" />
                 </a>
               </li>
               <li>
@@ -86,7 +86,7 @@ export default function Hero({ aboutRef, projectRef }: HeroProps) {
                   rel="noopener noreferrer"
                   className="text-neutral-300 hover:text-white transition-all transform hover:scale-110 duration-200 drop-shadow-md"
                 >
-                  <FaGithub className="text-2xl md:text-3xl" />
+                  <FaGithub className="text-2xl md:text-4xl" />
                 </a>
               </li>
             </ul>
