@@ -3,18 +3,24 @@ import { itemVariants } from '@/animations/variants';
 import SectionDivider from '@/components/section.divider';
 import { GrCertificate } from "react-icons/gr";
 
-export default function Certifications() {
+interface CertificationsProps {
+  certificateRef: React.RefObject<HTMLDivElement | null>;
+}
+
+
+export default function Certifications({certificateRef}: CertificationsProps) {
   return (
     <motion.section 
-      id="certifications" 
+      ref={certificateRef}
       className="py-20 px-5 md:px-20 lg:px-40"
       variants={itemVariants}
       initial="hidden"
       animate="visible"
+      whileInView="visible"
     >
       <div className="text-center mb-12">
         <motion.h2
-          className="font-light text-4xl md:text-5xl text-white tracking-tight mb-2 inline-block"
+          className="font-title text-4xl md:text-5xl text-white tracking-tight mb-2 inline-block"
           variants={itemVariants}
         >
           Mis{' '}

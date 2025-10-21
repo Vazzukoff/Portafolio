@@ -7,9 +7,10 @@ import LetterGlitch from "@/animations/letter.glitch";
 interface HeroProps {
   aboutRef: RefObject<HTMLDivElement | null>
   projectRef: RefObject<HTMLDivElement | null>
+  certificateRef: RefObject<HTMLDivElement | null>
 }
 
-export default function Hero({ aboutRef, projectRef }: HeroProps) {
+export default function Hero({ aboutRef, projectRef, certificateRef }: HeroProps) {
   const scrollToSection = (ref: RefObject<HTMLDivElement | null>) => {
     ref.current?.scrollIntoView({ behavior: "smooth" })
   }
@@ -45,6 +46,12 @@ export default function Hero({ aboutRef, projectRef }: HeroProps) {
                 className="cursor-pointer px-3 md:px-5 py-2 rounded-full text-xs md:text-sm font-medium text-white/80 hover:text-emerald-400 hover:bg-emerald-400/10 transition-all duration-300 tracking-wide"
               >
                 Mis proyectos
+              </li>
+              <li
+                onClick={() => scrollToSection(certificateRef)}
+                className="cursor-pointer px-3 md:px-5 py-2 rounded-full text-xs md:text-sm font-medium text-white/80 hover:text-emerald-400 hover:bg-emerald-400/10 transition-all duration-300 tracking-wide"
+              >
+                Certificados
               </li>
             </ul>
           </nav>
