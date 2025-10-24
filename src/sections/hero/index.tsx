@@ -1,5 +1,6 @@
 import { CiLinkedin } from "react-icons/ci";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { HiMail } from "react-icons/hi";
 import DownloadButton from "@/UI/download.CV.button";
 import type { RefObject } from "react";
 import LetterGlitch from "@/animations/letter.glitch";
@@ -64,21 +65,40 @@ export default function Hero({ aboutRef, projectRef, certificateRef }: HeroProps
             <img
               src="/assets/images/Hero.jpeg"
               alt="Hero"
-              className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full object-cover border-2 border-neutral-600 shadow-2xl mx-auto mb-4 md:mb-6 ring-2 ring-neutral-700/50"
+              className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full object-cover border-2 border-white/30 shadow-2xl mx-auto mb-4 md:mb-6 ring-2 ring-emerald-400/20"
             />
-            <h1 className="font-title text-2xl md:text-3xl lg:text-4xl text-white drop-shadow-lg px-2">
-              Hola! soy Sebastián Vallejo Bezzubikoff
+            <h1 className="font-light text-2xl md:text-3xl lg:text-4xl text-white drop-shadow-lg px-2 tracking-tight">
+              Hola! soy <span className="text-emerald-400">Sebastián Vallejo Bezzubikoff</span>
             </h1>
-            <h2 className="font-subtitle text-base md:text-lg lg:text-xl text-neutral-300 mt-2 drop-shadow-md">
+            <h2 className="font-light text-base md:text-lg lg:text-xl text-white/70 mt-2 drop-shadow-md tracking-wide">
               Full Stack web developer
             </h2>
-            <ul className="flex gap-4 md:gap-6 justify-center items-center mt-4 md:mt-6">
+
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-stretch mt-6 mb-6 max-w-lg mx-auto">
+              <a
+                href="mailto:sebasvallejo@gmail.com"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-white/5 border border-white/10 hover:border-emerald-400/40 hover:bg-white/10 text-white/70 hover:text-emerald-400 transition-all duration-300 text-sm font-light tracking-wide group flex-1 min-w-0"
+              >
+                <HiMail className="w-5 h-5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                <span className="truncate">sebasvallejo@gmail.com</span>
+              </a>
+              
+              <a
+                href="https://wa.me/51997639634?text=Hola%20Sebastián,%20vi%20tu%20portafolio%20y%20me%20gustaría%20contactarte"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-white/5 border border-white/10 hover:border-emerald-400/40 hover:bg-white/10 text-white/70 hover:text-emerald-400 transition-all duration-300 text-sm font-light tracking-wide group flex-1 min-w-0"
+              >
+                <FaWhatsapp className="w-5 h-5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                <span className="whitespace-nowrap">+51 997 639 634</span>
+              </a>
+            </div>
+
+            <ul className="flex gap-4 md:gap-6 justify-center items-center">
               <li>
                 <a
                   href="https://www.linkedin.com/in/tu-usuario"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-neutral-300 hover:text-blue-400 transition-all transform hover:scale-110 duration-200 drop-shadow-md"
+                  className="text-white/70 hover:text-emerald-400 transition-all transform hover:scale-110 duration-300 drop-shadow-md"
                 >
                   <CiLinkedin className="text-2xl md:text-4xl" />
                 </a>
@@ -91,7 +111,7 @@ export default function Hero({ aboutRef, projectRef, certificateRef }: HeroProps
                   href="https://github.com/Vazzukoff"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-neutral-300 hover:text-white transition-all transform hover:scale-110 duration-200 drop-shadow-md"
+                  className="text-white/70 hover:text-emerald-400 transition-all transform hover:scale-110 duration-300 drop-shadow-md"
                 >
                   <FaGithub className="text-2xl md:text-4xl" />
                 </a>
