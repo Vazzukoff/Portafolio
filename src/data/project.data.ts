@@ -49,7 +49,7 @@ export const projectsData: Project[] = [
   {
     id: 'mentor-ai',
     title: 'Mentor AI',
-    description: 'Mentor AI es un chatbot educativo desarrollado para asistir en el estudio. Implementé la integración con la API de Gemini, diseñé la interfaz en React con TailwindCSS, y configuré la arquitectura del proyecto utilizando TypeScript y Vite. Además, optimicé el rendimiento y la mantenibilidad del código mediante la refactorización de componentes y la gestión eficiente de dependencias.',
+    description: 'Mentor AI es un chatbot educativo desarrollado para asistir en el estudio. Implementé la integración con la API de Gemini, diseñé la interfaz en React con TailwindCSS, y configuré la arquitectura del proyecto utilizando TypeScript y Vite. Además, moldeé la personalidad del chatbot para ofrecer una experiencia de aprendizaje atractiva y efectiva.',
     technologies: [
       'React',
       'TypeScript',
@@ -61,4 +61,4 @@ export const projectsData: Project[] = [
     githubUrl: 'https://github.com/Vazzukoff/MentorAI.git',
     deployUrl: 'https://mentor-ai-phi.vercel.app'
   }
-];
+]
