@@ -95,7 +95,7 @@ export default function Hero({ aboutRef, projectRef, certificateRef }: HeroProps
             <ul className="flex gap-4 md:gap-6 justify-center items-center">
               <li>
                 <a
-                  href="https://www.linkedin.com/in/sebastian-vallejo-bezzubikoff"
+                  href="https://www.linkedin.com/in/sebastián-vallejo-bezzubikoff"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-emerald-400 transition-all transform hover:scale-110 duration-300 drop-shadow-md"
