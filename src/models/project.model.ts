@@ -5,6 +5,7 @@ export interface Project {
   technologies: string[];
   githubUrl: string;
   deployUrl?: string;
+  isProduction?: boolean
 }
 
 export interface ProjectProps {

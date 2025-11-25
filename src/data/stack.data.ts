@@ -13,7 +13,8 @@ import {
   SiGithub,
   SiPostman,
   SiVercel,
-  SiDocker
+  SiDocker,
+  SiNextdotjs
 } from 'react-icons/si';
 
 export interface Technology {
@@ -35,6 +36,7 @@ export const stackData: StackCategory[] = [
     technologies: [
       { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "Next.js", icon: SiNextdotjs, color: "white" },
       { name: "React", icon: SiReact, color: "#61DAFB" },
       { name: "HTML", icon: SiHtml5, color: "#E34F26" },
       { name: "CSS", icon: SiCss3, color: "#1572B6" },
