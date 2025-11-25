@@ -46,10 +46,10 @@ export const projectsData: Project[] = [
     id: 'educational-center',
     title: 'Sitio web "El Mundo de Gru"',
     description: `Sitio web informativo, responsive y actualmente en producción para un centro educativo de nivel inicial. 
-                Desarrollado con Next.js, implementando prácticas de SEO para mejorar el posicionamiento y la visibilidad del sitio. 
-                Presenta los servicios, la ubicación y el equipo de trabajo de la institución, acompañado de animaciones fluidas 
-                y un diseño moderno acorde al tono del negocio. Incluye un formulario de contacto funcional integrado con Nodemailer y Express, el cual 
-                ya está generando leads reales para la institución.`,
+                Desarrollado con Next.js, implementando prácticas de SEO para mejorar el posicionamiento y la visibilidad del sitio, . 
+                logrando una puntuación de 99 en la prueba de lighthouse. Presenta los servicios, la ubicación y el equipo de trabajo de 
+                la institución, acompañado de animaciones fluidas y un diseño moderno acorde al tono del negocio. Incluye un formulario 
+                de contacto funcional integrado con Nodemailer y Express, el cual ya está generando leads reales para la institución.`,
     technologies: [
       'Next.js',
       'React',
