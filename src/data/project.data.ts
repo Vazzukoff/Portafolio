@@ -4,9 +4,10 @@ export const projectsData: Project[] = [
   {
     id: 'intranet',
     title: 'Intranet',
-    description: `Aplicación interna para gestión de tareas y archivos con sistema de roles (admin y empleado). Los administradores pueden crear, revisar 
-                  y eliminar tareas y archivos; los empleados completan tareas subiendo evidencias obligatorias. Incluye autenticación con JWT, subida de 
-                  archivos con Multer y tareas automáticas programadas con node-cron.`,
+    description: `Aplicación interna tipo “mini ERP” para gestionar tareas y archivos entre administradores y empleados. Incluye autenticación con JWT, control 
+                  de roles y subida de archivos con Multer. Implementé una API completa con Express, PostgreSQL y validaciones con Zod, además de automatizaciones 
+                  programadas con node-cron. En el frontend desarrollé una interfaz moderna en React + TypeScript con Tailwind y Radix UI. Este proyecto demuestra 
+                  dominio full-stack, flujos completos de trabajo y manejo de background jobs y permisos avanzados.`,
     technologies: [
       'React',
       'TypeScript',
@@ -27,9 +28,9 @@ export const projectsData: Project[] = [
   {
     id: 'mentor-ai',
     title: 'Mentor AI',
-    description: `Mentor AI es una beta de un proyecto más grande, actualmente es un chatbot educativo desarrollado para asistir en el estudio. Implementé la 
-                  integración con la API de Gemini, diseñé la interfaz en React con TailwindCSS, y configuré la arquitectura del proyecto utilizando TypeScript 
-                  y Vite. Además, moldeé la personalidad del chatbot para ofrecer una experiencia de aprendizaje atractiva y efectiva.`,
+    description: `Chatbot educativo diseñado para asistir en el estudio, construido con React + TypeScript e integrado con la API de Gemini. Implementé diseño 
+                  conversacional, control de prompts y personalidad del asistente para lograr una experiencia fluida. La interfaz está optimizada con TailwindCSS 
+                  y Vite, logrando un entorno rápido y limpio. Este proyecto demuestra integración de LLMs en aplicaciones prácticas.`,
     technologies: [
       'React',
       'TypeScript',
@@ -45,11 +46,9 @@ export const projectsData: Project[] = [
   {
     id: 'educational-center',
     title: 'Sitio web "El Mundo de Gru"',
-    description: `Sitio web informativo, responsive y actualmente en producción para un centro educativo de nivel inicial. 
-                Desarrollado con Next.js, implementando prácticas de SEO para mejorar el posicionamiento y la visibilidad del sitio, . 
-                logrando una puntuación de 99 en la prueba de lighthouse. Presenta los servicios, la ubicación y el equipo de trabajo de 
-                la institución, acompañado de animaciones fluidas y un diseño moderno acorde al tono del negocio. Incluye un formulario 
-                de contacto funcional integrado con Nodemailer y Express, el cual ya está generando leads reales para la institución.`,
+    description: `Sitio web institucional desarrollado con Next.js para un centro educativo, enfocado en visibilidad y captación de leads. Optimicé SEO 
+                  técnico logrando un puntaje 99/100 en Lighthouse, incluí un formulario de contacto funcional con Node + Express + Nodemailer, y configuré 
+                  el dominio y despliegue en producción. El sitio ya está generando leads reales y ofrece una experiencia moderna y responsive acorde al negocio.`,
     technologies: [
       'Next.js',
       'React',
@@ -64,8 +63,9 @@ export const projectsData: Project[] = [
   {
     id: 'portfolio',
     title: 'Portafolio',
-    description: `Sitio web personal diseñado para presentar mi perfil profesional, habilidades y proyectos destacados. Incluye secciones dinámicas sobre 
-                  mí, experiencia, trabajos realizados y un formulario de contacto. Desarrollado con enfoque en rendimiento, accesibilidad y animaciones fluidas.`,
+    description: `Sitio personal para mostrar mi perfil, habilidades y proyectos destacados. Fue creado con énfasis en rendimiento, accesibilidad y una 
+                  experiencia visual animada mediante Framer Motion. Incluye secciones dinámicas, navegación clara y un diseño moderno construido con React + 
+                  TypeScript y TailwindCSS.`,
     technologies: [
       'React',
       'TypeScript',
